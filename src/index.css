@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('/fonts/OnlineWebFonts_COM_152964c51cc4e7bc63a86509b52aee17/Neue%20Machina/Neue%20Machina.woff2') format('woff2'),
+    url('/fonts/OnlineWebFonts_COM_152964c51cc4e7bc63a86509b52aee17/Neue%20Machina/Neue%20Machina.woff') format('woff');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url('/fonts/Bahnschrift.woff2') format('woff2'),
+    url('/fonts/Bahnschrift.woff') format('woff');
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  --estu-background: #121936;
+  --estu-primary: #15e5e5;
+  --estu-surface: rgba(215, 255, 255, 0.03);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Bahnschrift', 'Segoe UI', sans-serif;
+  background: var(--estu-background);
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
