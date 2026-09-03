@@ -1,14 +1,13 @@
-import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 
 // Buraya etkinlik fotoğraflarının yollarını ekleyeceksin
 const eventPhotos = [
-  "../../public/events/etkinlik1.jpg",
-  "../../public/events/etkinlik2.jpg",
-  "../../public/events/etkinlik3.jpg",
-  "../../public/events/etkinlik4.jpg",
-  "../../public/events/etkinlik5.jpg",
-  "../../public/events/etkinlik6.jpg",
+  "./events/etkinlik1.jpg",
+  "./events/etkinlik2.jpg",
+  "./events/etkinlik3.jpg",
+  "./events/etkinlik4.jpg",
+  "./events/etkinlik5.jpg",
+  "./events/etkinlik6.jpg",
 ];
 
 export default function EventGallery({ isDark }) {

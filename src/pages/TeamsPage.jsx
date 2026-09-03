@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography, Paper, Grid } from "@mui/material";
 import MainLayout from "../components/MainLayout";
 import { useThemeMode } from "../ThemeContext";
@@ -21,7 +20,7 @@ export default function AboutPage() {
         }}
       >
         <Grid container spacing={3}>
-          <Grid item xs={12}>
+          <Grid size={12}>
             <Typography
               variant="h2"
               sx={{
@@ -65,7 +64,7 @@ export default function AboutPage() {
         }}
       >
         <Grid container spacing={3}>
-          <Grid item xs={12}>
+          <Grid size={12}>
             <Typography
               variant="h2"
               sx={{
@@ -104,7 +103,7 @@ export default function AboutPage() {
         }}
       >
         <Grid container spacing={3}>
-          <Grid item xs={12}>
+          <Grid size={12}>
             <Typography
               variant="h2"
               sx={{

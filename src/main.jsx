@@ -16,7 +16,7 @@ function AppShell() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter>
+      <BrowserRouter basename="/estu-yazilim-website">
 
         {/* 3. Sayfa içeriklerinin değişeceği alan */}
         <Routes>

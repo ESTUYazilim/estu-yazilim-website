@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -11,7 +11,6 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemText,
   Divider
 } from "@mui/material";
 import { useThemeMode } from "../ThemeContext";
@@ -55,7 +54,7 @@ export default function Navbar() {
         {navItems.map((item) => (
           <ListItem key={item.title} disablePadding>
             <ListItemButton component={Link} to={item.path} sx={{ textAlign: "center", borderRadius: 2, mb: 1 }}>
-              <ListItemText primary={item.title} primaryTypographyProps={{ fontWeight: 600 }} />
+              <Typography sx={{ fontWeight: 600, width: "100%" }}>{item.title}</Typography>
             </ListItemButton>
           </ListItem>
         ))}
@@ -65,7 +64,7 @@ export default function Navbar() {
       
       {/* Mobil Menü İçin Üye Ol Butonu */}
       <Button
-        href="https://forms.gle/7okad9dNHajCxJXSA"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc-yCXJ5FE2F5JjCiU4MZE2NPW9q5D-iVWftG_r0Z7x3Xh8Rg/viewform?usp=publish-editor"
         variant="outlined"
         fullWidth
         sx={{
@@ -124,7 +123,7 @@ export default function Navbar() {
           >
             <Box
               component="img"
-              src="/Beyaz (1).png"
+              src="/estu-yazilim-website/beyaz-tam.png"
               alt="Estu Yazılım Logo"
               sx={{
                 height: 35,
@@ -170,7 +169,7 @@ export default function Navbar() {
             ))}
             
             <Button
-              href="https://forms.gle/7okad9dNHajCxJXSA"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc-yCXJ5FE2F5JjCiU4MZE2NPW9q5D-iVWftG_r0Z7x3Xh8Rg/viewform?usp=publish-editor"
               variant="outlined"
               sx={{
                 ml: 1,

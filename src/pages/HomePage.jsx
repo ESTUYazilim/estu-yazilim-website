@@ -97,7 +97,7 @@ export default function PageLayout() {
           }}
         >
           <img
-            src= {isDark ? "/beyaz_sol.png" : "/sol.png"}
+            src= {isDark ? "./beyaz_sol.png" : "./sol.png"}
             alt="Sol"
             // Görsel genişliği kutuyu doldurur, yüksekliği otomatik ayarlanır
             style={{ width: "30%", height: "auto", objectFit: "contain" }}
@@ -481,7 +481,7 @@ export default function PageLayout() {
           }}
         >
           <img
-            src="/beyaz_sag.png"
+            src="./beyaz_sag.png"
             alt="Sağ"
             style={{ width: "15%", height: "auto" }}
           />

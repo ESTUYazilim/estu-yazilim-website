@@ -49,7 +49,7 @@ export default function MainLayout({ children }) {
           }}
         >
           <InteractiveLogo
-            src={isDark ? "/beyaz_sol.png" : "/sol.png"}
+            src={isDark ? "./beyaz_sol.png" : "./sol.png"}
             alt="Sol Logo"
           />
         </Box>
@@ -70,7 +70,7 @@ export default function MainLayout({ children }) {
         {/* SAĞ SÜTUN */}
         <Box
           component="img"
-          src={isDark ? "/beyaz_sag.png" : "/sag.png"}
+          src={isDark ? "./beyaz_sag.png" : "./sag.png"}
           alt="Sağ Logo"
           sx={{
             width: "10%",

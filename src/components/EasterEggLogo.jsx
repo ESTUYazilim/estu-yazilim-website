@@ -41,7 +41,7 @@ export default function EasterEggLogo({ isDark }) {
       }}
     >
       <img
-        src={isDark ? "/Beyaz (1).png" : "/Beyaz (1).png"}
+        src={isDark ? "/beyaz-tam.png" : "/beyaz-tam.png"}
         alt="Kaçan Logo"
         style={{
           width: "100%",
