@@ -8,9 +8,9 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import { useThemeMode } from "./ThemeContext";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { useThemeMode } from "../ThemeContext";
 
 const serviceCards = [
   {
@@ -57,6 +57,7 @@ export default function PageLayout() {
         background: isDark
           ? "radial-gradient(circle at top, rgba(21, 229, 229, 0.12) 0%, transparent 35%), linear-gradient(180deg, #121936 0%, #0f1530 100%)"
           : "radial-gradient(circle at top, rgba(21, 229, 229, 0.18) 0%, transparent 35%), linear-gradient(180deg, #f5fbff 0%, #eaf8ff 100%)",
+
       }}
     >
       <Navbar />

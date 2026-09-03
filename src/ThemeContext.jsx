@@ -25,7 +25,7 @@ const getTheme = (mode) =>
       fontFamily: 'Bahnschrift, "Segoe UI", sans-serif',
       h1: {
         fontFamily: 'Neue Machina, Bahnschrift, sans-serif',
-        fontWeight: 800,
+        fontWeight: 50,
       },
       h2: {
         fontFamily: 'Neue Machina, Bahnschrift, sans-serif',

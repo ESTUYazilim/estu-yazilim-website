@@ -3,7 +3,7 @@ import {
   Container,
   Typography,
 } from "@mui/material";
-import { useThemeMode } from "./ThemeContext";
+import { useThemeMode } from "../ThemeContext";
 
 export default function Footer() {
   const { mode } = useThemeMode();
