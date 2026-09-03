@@ -19,19 +19,22 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
+      // GitHub Pages SPA Yönlendirme Çözümü (Karşılayıcı)
       (function (l) {
-        if (l.search[1] === "/") {
-          var decoded = l.search
+        if (l.search[1] === "p") {
+          var a = l.search
             .slice(1)
             .split("&")
             .map(function (s) {
               return s.replace(/~and~/g, "&");
-            })
-            .join("?");
+            });
           window.history.replaceState(
             null,
             null,
-            l.pathname.slice(0, -1) + decoded + l.hash,
+            l.pathname.slice(0, -1) +
+              a[0].slice(2) +
+              (a[1] ? "?" + a[1].slice(2) : "") +
+              l.hash,
           );
         }
       })(window.location);
