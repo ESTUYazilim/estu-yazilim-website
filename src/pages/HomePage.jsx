@@ -141,7 +141,7 @@ export default function PageLayout() {
                       textTransform: "uppercase",
                     }}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Berat ipsum dolor sit amet, consectetur adipiscing elit.
                   </Typography>
                   <Typography
                     variant="h6"
