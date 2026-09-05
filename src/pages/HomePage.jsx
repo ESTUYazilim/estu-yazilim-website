@@ -14,32 +14,32 @@ import { useThemeMode } from "../ThemeContext";
 
 const serviceCards = [
   {
-    title: "Ürün Tasarımı",
-    text: "BERAT ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
+    title: "Kariyer ve Sektör Bağlantısı",
+    text: "CareerD+ etkinliklerimizle sektör profesyonellerini üyelerimizle buluşturuyoruz. Uzmanlara doğrudan soru sorma, ilgi alanlarını keşfetme ve staj/iş fırsatlarını yakalama şansı sunuyoruz.",
   },
   {
     title: "Yazılım Geliştirme",
-    text: "Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+    text: "Web, mobil ve yapay zekâ alanlarında çalışan ekiplerimizle gerçek projeler üretiyoruz. Fikirden koda giden süreçte birlikte öğreniyor, birlikte inşa ediyoruz.",
   },
   {
     title: "Topluluk ve Etkinlik",
-    text: "Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.",
+    text: "Workshoplar, meetup'lar ve sosyal etkinliklerle kulüp ruhunu canlı tutuyoruz. Yazılımı sadece kod değil, birlikte üretilen bir deneyim olarak yaşıyoruz.",
   },
   {
     title: "Mentorluk ve Eğitim",
-    text: "Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent.",
+    text: "Yeni üyelerimize deneyimli üyelerimiz eşlik ediyor. Düzenli eğitimler ve atölyelerle teorik bilgiyi pratiğe dönüştürüyoruz.",
   },
 ];
 
 const highlights = [
-  "Haftalık ürün laboratuvarı",
-  "Öğrenci odaklı proje sprintleri",
+  "Workshoplar",
+  "Öğrenci odaklı proje ekipleri",
   "Yapay zeka, web ve mobil çalışma grupları",
 ];
 
 const metrics = [
-  { value: "12+", label: "Aktif çalışma alanı" },
-  { value: "48", label: "Saatlik üretim döngüsü" },
+  { value: "400+", label: "Üye sayısı" },
+  { value: "15", label: "Bu yıl düzenlenen etkinlik sayısı" },
   { value: "100%", label: "Öğrenci odaklı yapı" },
 ];
 
@@ -135,13 +135,13 @@ export default function PageLayout() {
                   <Typography
                     variant="h1"
                     sx={{
-                      fontSize: { xs: "3rem", md: "5.1rem" },
-                      lineHeight: 0.95,
+                      fontSize: { xs: "3rem", md: "4.7rem" },
+                      lineHeight: 1.1,
                       letterSpacing: "-0.04em",
                       textTransform: "uppercase",
                     }}
                   >
-                    Berat ipsum dolor sit amet, consectetur adipiscing elit.
+                    Satırların Ötesİne Geç: Tasarla, Gelİştİr ve İz Bırak.
                   </Typography>
                   <Typography
                     variant="h6"
@@ -151,10 +151,8 @@ export default function PageLayout() {
                       lineHeight: 1.8,
                     }}
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
-                  </Typography>
+                  Yazılım öğrenmek isteyen her öğrenciye kapımız açık. 
+                  Ekipler kuruyor, projeler üretiyor, sektör profesyonelleriyle buluşturuyoruz hepsi bir arada, bir toplulukta.                  </Typography>
                   <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
                     <Button
                       href="#hizmetler"
@@ -169,7 +167,7 @@ export default function PageLayout() {
                         "&:hover": { bgcolor: "#7bf0f0" },
                       }}
                     >
-                      Hizmetleri Keşfet
+                      Bizi Keşfet
                     </Button>
                     <Button
                       href="#iletisim"
@@ -229,20 +227,18 @@ export default function PageLayout() {
                       variant="overline"
                       sx={{ color: "#15E5E5", letterSpacing: "0.18em" }}
                     >
-                      Studio Brief
+                      BİR BAKIŞTA
                     </Typography>
                     <Typography
                       variant="h3"
                       sx={{ fontSize: { xs: "1.9rem", md: "2.4rem" } }}
                     >
-                      Lorem ipsum dolor sit amet, consectetur.
+                      Kod yazan, üreten, birlikte büyüyen bir topluluk.
                     </Typography>
                     <Typography
                       sx={{ color: isDark ? "rgba(255,255,255,0.72)" : "rgba(17,24,39,0.72)", lineHeight: 1.8 }}
                     >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam.
+                      ESTÜ Yazılım Kulübü, farklı bölümlerden öğrencileri bir araya getiren disiplinler arası bir yapı. Workshoplar, gerçek projeler ve sektörle kurulan bağlarla teoriyi pratiğe dönüştürüyoruz.
                     </Typography>
                     <Grid container spacing={2}>
                       {metrics.map((metric) => (
@@ -302,18 +298,18 @@ export default function PageLayout() {
                     <Typography
                       sx={{ color: isDark ? "rgba(255,255,255,0.74)" : "rgba(17,24,39,0.72)", lineHeight: 1.9 }}
                     >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                      diam.
+                      ESTÜ Yazılım Kulübü, 2022-2023 akademik yılında kurulan, 
+                      disiplinler arası bir öğrenci topluluğudur. Üyelerimize takım çalışması kültürü, 
+                      kulüp içi eğitimler ve sektör profesyonelleriyle bir araya gelme fırsatı sunuyoruz.
                     </Typography>
                   </Grid>
                   <Grid size={{ xs: 12, md: 7 }}>
                     <Grid container spacing={2}>
                       {[
-                        "Lorem ipsum dolor sit amet.",
-                        "Consectetur adipiscing elit sed do.",
-                        "Eiusmod tempor incididunt ut labore.",
-                        "Ut enim ad minim veniam quis nostrud.",
+                        "Disiplinler arası bir topluluk.",
+                        "Takım kültürüyle öğreniyoruz!",
+                        "Sektörle doğrudan bağlantı!",
+                        "Dinamik kadro, istekli öğrenciler.",
                       ].map((item) => (
                         <Grid size={{ xs: 12, sm: 6 }} key={item}>
                           <Paper
@@ -344,13 +340,14 @@ export default function PageLayout() {
                   variant="h2"
                   sx={{ fontSize: { xs: "2rem", md: "3rem" } }}
                 >
-                  Hizmetler
+                  Neler Yapıyoruz?
                 </Typography>
                 <Typography
                   sx={{ color: isDark ? "rgba(255,255,255,0.72)" : "rgba(17,24,39,0.72)", lineHeight: 1.8 }}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Kulüp içinde farklı alanlarda çalışan ekiplerimizle öğreniyor, 
+                  üretiyor ve büyüyoruz. İster yeni başlıyor ol ister deneyimli, 
+                  sana uygun bir çalışma alanı burada.
                 </Typography>
               </Stack>
               <Grid container spacing={3}>
