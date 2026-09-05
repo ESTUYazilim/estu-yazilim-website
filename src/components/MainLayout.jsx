@@ -46,6 +46,8 @@ export default function MainLayout({ children }) {
           sx={{
             width: { xs: "0%", md: "20%", lg: "15%" },
             display: { xs: "none", md: "flex" },
+            maxWidth: "150px",
+            justifyContent: "flex-start", 
           }}
         >
           <InteractiveLogo
@@ -67,25 +69,20 @@ export default function MainLayout({ children }) {
           </Container>
         </Box>
 
-        {/* SAĞ SÜTUN */}
+        {/* Sağ SÜTUN */}
         <Box
-          component="img"
-          src={isDark ? "./beyaz_sag.png" : "./sag.png"}
-          alt="Sağ Logo"
           sx={{
-            width: "10%",
-            height: "auto",
-            objectFit: "contain",
-            transition: "transform 0.4s ease-out, filter 0.4s ease-out",
-
-            "&:hover": {
-              // rotate(-4deg): Logoyu sola doğru 4 derece döndürür
-              transform: "translateY(-15px) scale(1.08) rotate(-4deg)",
-              filter: "drop-shadow(0 15px 25px rgba(21, 229, 229, 0.4))",
-              cursor: "pointer",
-            },
+            width: { xs: "0%", md: "20%", lg: "15%" },
+            display: { xs: "none", md: "flex" },
+            maxWidth: "150px", 
+            justifyContent: "flex-end", 
           }}
-        />
+        > 
+          <InteractiveLogo
+            src={isDark ? "./beyaz_sag.png" : "./sag.png"}
+            alt="Sağ Logo"
+          />
+        </Box>
       </Box>
 
       <Footer />

@@ -43,7 +43,7 @@ export default function InteractiveLogo({ src, alt }) {
       src={src}
       alt={alt}
       sx={{
-        width: "60%",
+        width: "100%",
         height: "auto",
         objectFit: "contain",
         cursor: "pointer",
@@ -54,7 +54,7 @@ export default function InteractiveLogo({ src, alt }) {
         // perspective(1000px): 3D derinlik hissini yaratır (olmazsa düz bir resim gibi döner)
         transform: `perspective(1000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) ${isHovered ? 'scale(1.1)' : 'scale(1)'}`,
         
-        // ESTÜ Kurumsal rengi ile neon parlama[cite: 1]
+        // ESTÜ Kurumsal rengi ile neon parlama
         filter: isHovered 
           ? "drop-shadow(0 15px 30px rgba(21, 229, 229, 0.4))" 
           : "drop-shadow(0 0 0 rgba(0,0,0,0))",
