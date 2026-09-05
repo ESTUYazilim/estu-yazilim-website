@@ -15,7 +15,7 @@ import { useThemeMode } from "../ThemeContext";
 const serviceCards = [
   {
     title: "Ürün Tasarımı",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
+    text: "BERAT ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.",
   },
   {
     title: "Yazılım Geliştirme",
