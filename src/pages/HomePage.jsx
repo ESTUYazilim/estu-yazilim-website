@@ -427,9 +427,8 @@ export default function PageLayout() {
                     <Typography
                       sx={{ color: isDark ? "rgba(255,255,255,0.74)" : "rgba(17,24,39,0.72)", lineHeight: 1.9 }}
                     >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Curabitur sodales ligula in libero. Sed dignissim lacinia
-                      nunc.
+                      Sorularınız, projeleriniz ya da kulübe katılmak için aklınıza takılan her şey için bize ulaşabilirsiniz. 
+                      Ekibimiz en kısa sürede dönüş yapacaktır.
                     </Typography>
                   </Grid>
                   <Grid size={{ xs: 12, md: 5 }}>
@@ -444,7 +443,7 @@ export default function PageLayout() {
                         }}
                       >
                         <Typography sx={{ color: isDark ? "rgba(255,255,255,0.72)" : "rgba(17,24,39,0.72)" }}>
-                          lorem@ipsum.edu.tr
+                          yazilimkulubu@gmail.com
                         </Typography>
                       </Paper>
                       <Paper
@@ -457,7 +456,7 @@ export default function PageLayout() {
                         }}
                       >
                         <Typography sx={{ color: isDark ? "rgba(255,255,255,0.72)" : "rgba(17,24,39,0.72)" }}>
-                          +90 (5xx) xxx xx xx
+                          Instagram: estuyazilim
                         </Typography>
                       </Paper>
                     </Stack>
