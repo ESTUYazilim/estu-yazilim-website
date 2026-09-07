@@ -135,9 +135,9 @@ export default function Navbar() {
             <Box sx={{ display: { xs: "block", sm: "block" } }}>
               <Typography
                 variant="body2"
-                sx={{ letterSpacing: "0.18em", color: isDark ? "rgba(255,255,255,0.7)" : "rgba(17,24,39,0.7)" }}
+                sx={{ letterSpacing: "0.12em", color: isDark ? "#dffff7" : "#121936" }}
               >
-                ESTÜ Yazılım Kulübü
+                Yazılım <br /> Kulübü
               </Typography>
             </Box>
           </Box>
