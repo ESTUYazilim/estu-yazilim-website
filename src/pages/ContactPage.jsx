@@ -7,7 +7,6 @@ import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import MainLayout from "../components/MainLayout";
 import { useThemeMode } from "../ThemeContext";
 
-const contactEmail = "estuyazilim@gmail.com";
 
 export default function ContactPage() {
   const { mode } = useThemeMode();
@@ -66,7 +65,7 @@ export default function ContactPage() {
                   <Stack direction="row" spacing={1.5}>
                     <IconButton
                       component="a"
-                      href={`mailto:${contactEmail}`}
+                      href={`mailto:estuyazilim@gmail.com`}
                       aria-label="E-posta gönder"
                       sx={{
                         border: `1px solid ${isDark ? "rgba(255,255,255,0.14)" : "rgba(15,23,42,0.12)"}`,

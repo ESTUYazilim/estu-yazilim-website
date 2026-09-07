@@ -51,7 +51,7 @@ export default function MainLayout({ children }) {
           }}
         >
           <InteractiveLogo
-            src={isDark ? "./beyaz_sol.png" : "./sol.png"}
+            src={isDark ? "/estu-yazilim-website/beyaz_sol.png" : "/estu-yazilim-website/sol.png"}
             alt="Sol Logo"
           />
         </Box>
@@ -79,7 +79,7 @@ export default function MainLayout({ children }) {
           }}
         > 
           <InteractiveLogo
-            src={isDark ? "./beyaz_sag.png" : "./sag.png"}
+            src={isDark ? "/estu-yazilim-website/beyaz_sag.png" : "/estu-yazilim-website/sag.png"}
             alt="Sağ Logo"
           />
         </Box>
