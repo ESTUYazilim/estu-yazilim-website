@@ -21,7 +21,7 @@ import { Link } from "react-router-dom";
 
 const navItems = [
   { title: "Hakkımızda", path: "/hakkimizda" },
-  { title: "Takımlar", path: "/takimlar" },
+  { title: "Ekibimiz", path: "/Ekibimiz" },
   { title: "Etkinlikler", path: "/etkinlikler" },
   { title: "İletişim", path: "/iletisim" },
 ];
@@ -132,12 +132,25 @@ export default function Navbar() {
                 filter: isDark ? "none" : "brightness(0.2)",
               }}
             />
-            <Box sx={{ display: { xs: "block", sm: "block" } }}>
+           <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                transform: "translateY(1.7px)", 
+              }}
+            >
               <Typography
-                variant="body2"
-                sx={{ letterSpacing: "0.12em", color: isDark ? "#dffff7" : "#121936" }}
+                sx={{
+                  fontSize: "0.9rem",      
+                  fontWeight: 700,          
+                  lineHeight: 1.45,         
+                  letterSpacing: "0.12em",  
+                  color: isDark ? "#dffff7" : "#121936",
+                  userSelect: "none",
+                }}
               >
-                Yazılım <br /> Kulübü
+                YAZILIM <br /> KULÜBÜ
               </Typography>
             </Box>
           </Box>

@@ -7,6 +7,21 @@ import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import MainLayout from "../components/MainLayout";
 import { useThemeMode } from "../ThemeContext";
 
+function NeonBar({ align = "left" }) {
+  return (
+    <Box
+      sx={{
+        width: 48,
+        height: 3.5,
+        bgcolor: "#15E5E5",
+        borderRadius: 999,
+        boxShadow: "0 0 10px rgba(21, 229, 229, 0.5)",
+        my: 2, // Başlık ile metin arasındaki ideal boşluk
+        mx: align === "center" ? "auto" : 0,
+      }}
+    />
+  );
+}
 
 export default function ContactPage() {
   const { mode } = useThemeMode();
@@ -54,6 +69,7 @@ export default function ContactPage() {
                   >
                     Bize yazın, kısa sürede dönüş yapalım.
                   </Typography>
+                   <NeonBar />
                   <Typography sx={{ color: "text.secondary", lineHeight: 1.9 }}>
                     Etkinlikler, üyelik, proje fikirleri veya ortak çalışmalar
                     için e-posta üzerinden ulaşabilir ya da sosyal

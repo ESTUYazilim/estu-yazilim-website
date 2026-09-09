@@ -4,7 +4,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import "./index.css";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import TeamsPage from "./pages/TeamsPage";
+import Ekibimiz from "./pages/Ekibimiz";
 import EventsPage from "./pages/EventsPage";
 import ContactPage from "./pages/ContactPage";
 import { ThemeModeProvider, useThemeMode } from "./ThemeContext.jsx";
@@ -17,15 +17,12 @@ function AppShell() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter basename="/estu-yazilim-website">
-
-        {/* 3. Sayfa içeriklerinin değişeceği alan */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/hakkimizda" element={<AboutPage />} />
-          <Route path="/takimlar" element={<TeamsPage />} />
+          <Route path="/ekibimiz" element={<Ekibimiz />} />
           <Route path="/etkinlikler" element={<EventsPage />} />
           <Route path="/iletisim" element={<ContactPage />} />
-          {/* İhtiyacın olan diğer sayfaları da buraya alt alta ekleyebilirsin */}
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

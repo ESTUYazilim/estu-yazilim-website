@@ -1,7 +1,24 @@
-import { Typography, Paper, Grid } from "@mui/material";
+import { Typography, Paper, Grid, Box } from "@mui/material";
 import MainLayout from "../components/MainLayout";
 import { useThemeMode } from "../ThemeContext";
 import EventGallery from "../components/EventGallery";
+
+
+function NeonBar({ align = "left" }) {
+  return (
+    <Box
+      sx={{
+        width: 48,
+        height: 3.5,
+        bgcolor: "#15E5E5",
+        borderRadius: 999,
+        boxShadow: "0 0 10px rgba(21, 229, 229, 0.5)",
+        my: 2, // Başlık ile metin arasındaki ideal boşluk
+        mx: align === "center" ? "auto" : 0,
+      }}
+    />
+  );
+}
 
 export default function AboutPage() {
   const { mode } = useThemeMode();
@@ -10,6 +27,16 @@ export default function AboutPage() {
   return (
     <MainLayout>
       {/* SADECE BU SAYFAYA ÖZEL İÇERİKLER */}
+      <Typography
+                variant="h1"
+                sx={{
+                  fontSize: { xs: "2.6rem", md: "3.8rem" },
+                  fontWeight: 700,
+                  textAlign: "center",
+                }}
+              >
+                Etkinliklerimiz
+              </Typography>
       <Paper
         elevation={0}
         sx={{
@@ -20,6 +47,7 @@ export default function AboutPage() {
           mt: 4,
         }}
       >
+        
         <Grid container spacing={3}>
           <Grid size={12}>
             <Typography
@@ -31,12 +59,15 @@ export default function AboutPage() {
               }}
             >
               CareerD+
+              
             </Typography>
+            <NeonBar />
             <Typography
               sx={{
                 color: "text.secondary",
                 lineHeight: 1.9,
               }}
+              
             >
               CareerD+ etkinliklerimizde, sektör profesyonellerini üyelerimizle
               bir araya getirerek akademi ile iş dünyası arasında sağlam bir
@@ -45,6 +76,7 @@ export default function AboutPage() {
               ilgi duydukları alanları keşfetme ve staj/iş fırsatlarını yakalama
               şansı bulurlar.
             </Typography>
+            
           </Grid>
         </Grid>
       </Paper>

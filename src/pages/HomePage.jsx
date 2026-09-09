@@ -21,7 +21,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import MainLayout from "../components/MainLayout";
 import { useThemeMode } from "../ThemeContext";
-
 const highlights = [
   "Workshoplar",
   "Öğrenci odaklı proje ekipleri",
@@ -33,6 +32,23 @@ const metrics = [
   { value: "15", label: "Bu yıl düzenlenen etkinlik sayısı" },
   { value: "100%", label: "Öğrenci odaklı yapı" },
 ];
+
+function NeonBar({ align = "left" }) {
+  return (
+    <Box
+      sx={{
+        width: 48,
+        height: 3.5,
+        bgcolor: "#15E5E5",
+        borderRadius: 999,
+        boxShadow: "0 0 10px rgba(21, 229, 229, 0.5)",
+        my: 2, // Başlık ile metin arasındaki ideal boşluk
+        mx: align === "center" ? "auto" : 0,
+      }}
+    />
+  );
+}
+
 
 export default function PageLayout() {
   const { mode } = useThemeMode();
@@ -66,6 +82,7 @@ export default function PageLayout() {
                 >
                   Satırların Ötesİne Geç: Tasarla, Gelİştİr ve İz Bırak.
                 </Typography>
+              
                 <Typography
                   variant="h6"
                   sx={{
@@ -174,6 +191,7 @@ export default function PageLayout() {
                   >
                     Kod yazan, üreten, birlikte büyüyen bir topluluk.
                   </Typography>
+                    <NeonBar />
                   <Typography
                     sx={{
                       color: isDark
@@ -234,12 +252,13 @@ export default function PageLayout() {
             <Paper
               elevation={0}
               sx={{
-                p: { xs: 3, md: 4 },
+                p: { xs: 3, md: 5 },
                 borderRadius: 5,
-                bgcolor: isDark
-                  ? "rgba(215, 255, 255, 0.035)"
-                  : "rgba(255,255,255,0.7)",
-                border: `1px solid ${isDark ? "rgba(255,255,255,0.08)" : "rgba(15,23,42,0.08)"}`,
+                background: isDark
+                  ? "linear-gradient(135deg, rgba(21, 229, 229, 0.14) 0%, rgba(18, 25, 54, 0.3) 100%)"
+                  : "linear-gradient(135deg, rgba(21, 229, 229, 0.08) 0%, rgba(255, 255, 255, 0.8) 100%)",
+                border: `1px solid ${isDark ? "rgba(21, 229, 229, 0.2)" : "rgba(21, 229, 229, 0.2)"}`,
+                backdropFilter: "none",
               }}
             >
               <Grid container spacing={3} sx={{ alignItems: "center" }}>
@@ -250,6 +269,7 @@ export default function PageLayout() {
                   >
                     Hakkımızda
                   </Typography>
+                    <NeonBar />
                   <Typography
                     sx={{
                       color: isDark
@@ -358,6 +378,7 @@ export default function PageLayout() {
                     >
                       Kariyer ve Sektör Bağlantısı
                     </Typography>
+                      <NeonBar />
                     <Typography
                       sx={{
                         color: isDark
@@ -413,6 +434,7 @@ export default function PageLayout() {
                     >
                       Yazılım Geliştirme
                     </Typography>
+                      <NeonBar />
                     <Typography
                       sx={{
                         color: isDark
@@ -467,6 +489,7 @@ export default function PageLayout() {
                     >
                       Topluluk ve Etkinlik
                     </Typography>
+                      <NeonBar />
                     <Typography
                       sx={{
                         color: isDark
@@ -521,6 +544,7 @@ export default function PageLayout() {
                     >
                       Mentorluk ve Eğitim
                     </Typography>
+                    <NeonBar />
                     <Typography
                       sx={{
                         color: isDark
@@ -562,6 +586,7 @@ export default function PageLayout() {
                   >
                     İletişim
                   </Typography>
+                    <NeonBar />
                   <Typography
                     sx={{
                       color: isDark
