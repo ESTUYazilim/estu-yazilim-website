@@ -70,10 +70,7 @@ export default function Ekibimiz() {
     border: `1px solid ${isDark ? "rgba(255, 255, 255, 0.08)" : "rgba(15, 23, 42, 0.08)"}`,
     backdropFilter: "none",
     boxShadow: "none",
-    transition: "transform 180ms ease, border-color 180ms ease",
-    "&:hover": {
-      borderColor: "rgba(21, 229, 229, 0.3)",
-    },
+
   };
 
   return (
