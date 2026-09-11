@@ -4,27 +4,28 @@ import { useThemeMode } from "../ThemeContext";
 import EventGallery from "../components/EventGallery";
 
 const careerPhotos = [
-  "./events/etkinlik1.jpg",
-  "./events/etkinlik2.jpg",
-  "./events/etkinlik3.jpg",
-  "./events/etkinlik4.jpg",
-  "./events/etkinlik5.jpg",
-  "./events/etkinlik6.jpg",
+  "./events/career1.jpg",
+   "./events/training4.jpg",
+  "./events/training1.jpg",
+  "./events/event2.jpg",
+
+  //"./events/career5.jpg",
+ // "./events/training4.jpg",
 ];
 const trainingPhotos = [
   "./events/training1.jpg",
   "./events/training2.jpg",
   "./events/training3.jpg",
   "./events/training4.jpg",
-  "./events/training5.jpg",
-  "./events/training6.jpg",
+ // "./events/training5.jpg",
+  //"./events/training6.jpg",
 ];
 const eventPhotos = [
   "./events/event1.jpg",
   "./events/event2.jpg",
   "./events/event3.png",
-  // "./events/event4.jpg",
-  // "./events/event5.jpg",
+  "./events/event4.jpg",
+  "./events/event5.jpg",
   // "./events/event6.jpg",
 ];
 function NeonBar({ align = "left" }) {
