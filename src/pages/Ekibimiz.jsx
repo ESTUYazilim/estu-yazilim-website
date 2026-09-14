@@ -14,27 +14,27 @@ const managementTeam = [
   {
     name: "Berat Çiftçi",
     role: "Yönetim Kurulu Başkanı",
-    image: "/estu-yazilim-website/public/ekip/baskan.jpg",
+    image: "./ekip/baskan.jpg",
   },
   {
     name: "Elif Naz Deveci",
     role: "Başkan Yardımcısı",
-    image: "/estu-yazilim-website/public/ekip/baskan_yardimcisi.jpg",
+    image: "./ekip/baskan_yardimcisi.jpg",
   },
   {
     name: "Şeyma Güventürk",
     role: "Sekreter",
-    image: "/estu-yazilim-website/public/ekip/sekreter.jpg",
+    image: "./ekip/sekreter.jpg",
   },
   {
     name: "Sevgi Külahlı",
     role: "Sayman",
-    image: "/estu-yazilim-website/public/ekip/sayman.jpg",
+    image: "./ekip/sayman.jpg",
   },
   {
     name: "Yusuf Ali Rencüzoğulları",
     role: "Yönetim Kurulu Üyesi",
-    image: "/estu-yazilim-website/public/ekip/yonetim_kurulu_uyesi.jpg",
+    image: "./ekip/yonetim_kurulu_uyesi.jpg",
   },
 ]; 
 
