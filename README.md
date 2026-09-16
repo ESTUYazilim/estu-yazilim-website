@@ -1,20 +1,48 @@
-# estuyazilim.com
+# 🚀 ESTÜ Yazılım Kulübü Web Sitesi
 
-Website of ESTÜ Software Community
+ESTÜ Yazılım Kulübü'nün resmi web sitesi repository'sidir.
 
-eventgallery kullanımı:
-""""
+🌐 **Canlı Site:** [estuyazilim.com](https://estuyazilim.com)
 
-    <div>
-      <h2>Genel Etkinliklerimiz</h2>
-      {/* 1. Kullanım: Ana sayfa fotoğraflarını gönderiyoruz */}
-      <EventGallery isDark={isDark} photos={anaSayfaFotolari} />
+---
 
-      <h2>Hackathon 2026</h2>
-      {/* 2. Kullanım: Hackathon fotoğraflarını gönderiyoruz */}
-      <EventGallery isDark={isDark} photos={hackathonFotolari} />
-    </div>
+## 🛠️ Teknolojiler
 
-""""
+- **React + Vite**
+- **Material UI (MUI)** & MUI Icons
+- **React Router DOM**
 
-<div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a>is licensed by CC BY 4.0</div>
+---
+
+## 💻 Hızlı Başlangıç
+
+Projeyi yerelde çalıştırmak için:
+
+```bash
+# 1. Projeyi klonla
+git clone [https://github.com/estuyazilim/estu-yazilim-website.git](https://github.com/estuyazilim/estu-yazilim-website.git)
+cd estu-yazilim-website
+
+# 2. Paketleri yükle
+npm install
+
+# 3. Geliştirme sunucusunu başlat
+npm run dev
+
+📁 Klasör Yapısı
+
+├── public/                 # Favicon ve statik dosyalar
+├── src/
+│   ├── assets/             # Görseller ve medya dosyaları
+│   ├── components/         # Ortak bileşenler (Navbar, Footer, MainLayout)
+│   ├── pages/              # Sayfalar (HomePage, Ekibimiz, AboutPage vb.)
+│   ├── ThemeContext.jsx    # Dark/Light tema yönetimi
+│   └── main.jsx            # Rotalar (Routes) ve giriş noktası
+
+
+📬 İletişim
+E-posta: estuyazilim@gmail.com
+
+Instagram: @estuyazilim
+
+LinkedIn: ESTÜ Yazılım Kulübü
