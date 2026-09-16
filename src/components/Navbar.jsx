@@ -123,7 +123,7 @@ export default function Navbar() {
           >
             <Box
               component="img"
-              src="/estu-yazilim-website/beyaz-tam.png"
+              src="/beyaz-tam.png"
               alt="Estu Yazılım Logo"
               sx={{
                 height: 35,
