@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://estuyazilim.com/",
+  "homepage": "[www.estuyazilim.com](https://www.estuyazilim.com)",
   
   "scripts": {
     "dev": "vite",
