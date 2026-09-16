@@ -16,7 +16,7 @@ function AppShell() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter basename="/estu-yazilim-website">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/hakkimizda" element={<AboutPage />} />
