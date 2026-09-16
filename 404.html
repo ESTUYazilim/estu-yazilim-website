@@ -4,11 +4,9 @@
     <meta charset="utf-8">
     <title>Yönlendiriliyor...</title>
     <script>
-      // Kullanıcının gitmek istediği asıl URL'yi tarayıcı hafızasına (sessionStorage) kaydet
       sessionStorage.redirect = window.location.href;
+      window.location.replace("/");
     </script>
-    <!-- Kullanıcıyı anında ana sayfaya yönlendir -->
-    <meta http-equiv="refresh" content="0;URL='/estu-yazilim-website/'">
   </head>
   <body>
   </body>
