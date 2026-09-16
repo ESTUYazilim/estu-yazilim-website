@@ -43,14 +43,6 @@ npm run dev
 
 ---
 
-## Geliştirici Notları
-
-- **Dosya İsimlendirme:** Linux/GitHub Pages büyük-küçük harfe duyarlıdır. Bileşenleri çağırırken dosya adını birebir aynı yazmaya dikkat edin (örn. `Ekibimiz.jsx`).
-- **Ekip Fotoğrafları:** Yeni profil fotoğrafları `public/ekip/` içine `.jpg` formatında eklenmelidir.
-- **Tema:** Yeni sayfa/bileşen eklerken `useThemeMode()` ile hem koyu hem açık mod renk uyumunu kontrol edin.
-
----
-
 ## İletişim
 
 - **E-posta:** estuyazilim@gmail.com
