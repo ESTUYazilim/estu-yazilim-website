@@ -15,8 +15,8 @@ export default function MainLayout({ children }) {
         flexDirection: "column",
         minHeight: "100vh",
         background: isDark
-          ? "radial-gradient(circle at 12% 0%, rgba(21, 229, 229, 0.2) 0%, transparent 30%), radial-gradient(circle at 88% 82%, rgba(91, 111, 214, 0.18) 0%, transparent 34%), linear-gradient(120deg, #070b16 0%, #364b9e 52%, #121936 100%)"
-          : "radial-gradient(circle at 12% 0%, rgba(21, 229, 229, 0.22) 0%, transparent 30%), radial-gradient(circle at 88% 82%, rgba(91, 111, 214, 0.16) 0%, transparent 34%), linear-gradient(120deg, #f7ffff 0%, #dce9ff 52%, #f4f8ff 100%)",
+          ? "radial-gradient(circle at top, rgba(21, 229, 229, 0.12) 0%, transparent 35%), linear-gradient(180deg, #121936 0%, #0f1530 100%)"
+          : "radial-gradient(circle at top, rgba(21, 229, 229, 0.18) 0%, transparent 35%), linear-gradient(180deg, #f5fbff 0%, #eaf8ff 100%)",
       }}
     >
       <Navbar />
@@ -33,10 +33,10 @@ export default function MainLayout({ children }) {
           position: "relative",
           color: "text.primary",
           backgroundImage: isDark
-            ? "radial-gradient(circle at 50% 0%, rgba(21, 229, 229, 0.08), transparent 38%), linear-gradient(to right, rgba(168, 244, 255, 0.07) 1px, transparent 1px), linear-gradient(to bottom, rgba(168, 244, 255, 0.07) 1px, transparent 1px)"
-            : "radial-gradient(circle at 50% 0%, rgba(21, 229, 229, 0.12), transparent 38%), linear-gradient(to right, rgba(54, 75, 158, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(54, 75, 158, 0.08) 1px, transparent 1px)",
-          backgroundSize: "100% 100%, 42px 42px, 42px 42px",
-          backgroundRepeat: "no-repeat, repeat, repeat",
+            ? `linear-gradient(to right, rgba(21,229,229,0.07) 1px, transparent 1px), linear-gradient(to bottom, rgba(21,229,229,0.07) 1px, transparent 1px)`
+            : `linear-gradient(to right, rgba(21,229,229,0.10) 1px, transparent 1px), linear-gradient(to bottom, rgba(21,229,229,0.10) 1px, transparent 1px)`,
+          backgroundSize: "42px 42px, 42px 42px",
+          backgroundRepeat: "repeat, repeat",
         }}
       >
         {/* SOL SÜTUN */}
